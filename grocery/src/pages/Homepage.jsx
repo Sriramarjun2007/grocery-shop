@@ -14,7 +14,7 @@ function Home() {
         <p className="pl-205 mt-2">Fresh from nature, delivered with love. Your trusted source for 100% organic goodness.</p>
       <div className="pl-235 mt-15 flex gap-6">
         <button className=" text-white text-xl font-bold bg-green-700 rounded-2xl p-3 w-40 cursor-pointer hover:bg-green-900">Shop Now</button>
-        <button className=" text-white text-xl font-bold bg-orange-600 rounded-2xl p-3 w-40 cursor-pointer hover:bg-green-900">About Us</button>
+        <button className=" text-white text-xl font-bold bg-orange-600 rounded-2xl p-3 w-40 cursor-pointer hover:bg-orange-800">About Us</button>
       </div>
     </div>
   );
