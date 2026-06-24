@@ -1,6 +1,7 @@
 import homeimage from "../assets/home.jpg";
 import organic from "../assets/organic.png"
 import delivery from "../assets/delivery.png"
+import payment from "../assets/payment.png"
 function Home() {
   return (
     <div>
@@ -25,8 +26,12 @@ function Home() {
       <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
         <img src={organic} className="w-50 h-40"/>
       </div>
-      <div className="border-red-600 h-70 w-70 bg-green-300 border-1 border-red-600">2</div>
-      <div className="border-red-600 h-70 w-70 bg-green-300 border-1 border-red-600">2</div>
+      <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
+        <img src={delivery} className="w-50 h-40"/>
+      </div>
+      <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
+        <img src={payment} className="w-50 h-40"/>
+      </div>
       </div>
       </div>
     </div>
