@@ -1,11 +1,8 @@
 import homeimage from "../assets/home.jpg";
-import organic from "../assets/organic.png"
-import delivery from "../assets/delivery.png"
-import payment from "../assets/payment.png"
 function Home() {
   return (
     <div>
-    <div
+     <div
       className="h-screen bg-cover bg-center "
       style={{ backgroundImage: `url(${homeimage})` }} >
         <div className="pl-250 pt-60">
@@ -19,22 +16,10 @@ function Home() {
         <button className=" text-white text-xl font-bold bg-green-700 rounded-2xl p-3 w-40 cursor-pointer hover:bg-green-900">Shop Now</button>
         <button className=" text-white text-xl font-bold bg-orange-600 rounded-2xl p-3 w-40 cursor-pointer hover:bg-orange-800">About Us</button>
       </div>
+     </div>
+  
     </div>
-    <div>
-      <p className="text-center pt-12 text-l">WHAT WE OFFER</p>
-      <div className="flex gap-30 pt-10 pl-50">
-      <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
-        <img src={organic} className="w-50 h-40"/>
-      </div>
-      <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
-        <img src={delivery} className="w-50 h-40"/>
-      </div>
-      <div className="border-red-600 h-70 w-70 pt-8 pl-10 bg-green-300 border-1 border-red-600">
-        <img src={payment} className="w-50 h-40"/>
-      </div>
-      </div>
-      </div>
-    </div>
+    
     
   );
 }
