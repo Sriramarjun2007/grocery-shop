@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage"
 import Feature from "./component/Feature"
 import Ourproduct from "./component/Ourproduuct"
 import Category from "./pages/Category"
+import Cart from "./pages/Cart" 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </>
         } />
         <Route path="/category" element={<Category />} />
+        <Route path="/cart" element={<Cart />} /> 
       </Routes>
     </div>
   )

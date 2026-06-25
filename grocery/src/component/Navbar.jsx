@@ -2,9 +2,11 @@ import { FaSearch } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import { Link, useLocation } from 'react-router-dom'; 
+import { useCart } from "../CartContext"
 
 function Navbar() {
   const location = useLocation(); 
+    const { totalItems } = useCart();
   return (
     <nav className="bg-[#FFDFD0] p-7 fixed top-0 left-0 w-full z-50 shadow-lg"> 
 
@@ -34,8 +36,9 @@ function Navbar() {
         <div className="flex gap-6 text-black text-2xl items-center"> 
           <FaSearch className="cursor-pointer hover:text-orange-300 transition-colors duration-200" /> 
           <div className="relative">
+            <Link to="/cart">
             <FaBagShopping className="cursor-pointer hover:text-orange-300 transition-colors duration-200" /> 
-            <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">2</span> 
+            <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">{totalItems()}</span> </Link>
           </div>
           <FaUser className="cursor-pointer hover:text-orange-300 transition-colors duration-200" /> 
         </div>

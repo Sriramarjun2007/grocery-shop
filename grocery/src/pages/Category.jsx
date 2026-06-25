@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCart } from "../CartContext";  
 import onion from "../assets/onion.png";
 import carrot from "../assets/carrot.png";
 import brinjal from "../assets/brinjal.png";
@@ -39,6 +40,7 @@ const categories = ["All", "Vegetables", "Fruits", "Dairy Products", "Fresh Meat
 
 function Ourproduct() {
   const [selected, setSelected] = useState("All");
+  const { addToCart } = useCart();
 
   const filtered = selected === "All"
     ? products
@@ -117,12 +119,15 @@ function Ourproduct() {
                     <span className="text-green-600 text-xs font-semibold">{product.discount}</span>
                   </div>
 
-                  <button className="
+                  <button onClick={() => {
+                            addToCart(product);
+                            alert(`${product.name} is added to cart!`);
+                            }} className="
                     mt-4 w-full bg-orange-500 hover:bg-orange-600 active:scale-95
                     text-white font-semibold text-sm py-2.5 rounded-xl
                     transition-all duration-200
                     flex items-center justify-center gap-2
-                  ">
+                  " >
                     🛒 Add to cart
                   </button>
                 </div>
