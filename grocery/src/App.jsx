@@ -6,7 +6,7 @@ import Ourproduct from "./component/Ourproduuct"
 import Category from "./pages/Category"
 import Cart from "./pages/Cart" 
 import Checkout from "./pages/Checkout"
-
+import Ourcattegory from "./component/Ourcategory"
 function App() {
   return (
     <div>
@@ -18,6 +18,7 @@ function App() {
             <Homepage />
             <Feature />
             <Ourproduct />
+            <Ourcattegory/>
           </>
         } />
         <Route path="/category" element={<Category />} />
