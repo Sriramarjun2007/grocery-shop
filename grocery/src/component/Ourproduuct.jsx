@@ -4,7 +4,7 @@
     import greenapple from "../assets/greenapple.png";
     import watermeloon from "../assets/watermeloon.png";
     import orange from "../assets/orange.png";
-
+   
     const products = [
     { id: 1, name: "Fresh Onion",      variety: "Red variety",    price: "₹80",  oldPrice: "₹120", discount: "33% off", reviews: "(128)", img: onion      },
     { id: 2, name: "Fresh Carrot",     variety: "Orange variety", price: "₹40",  oldPrice: "₹60",  discount: "33% off", reviews: "(98)",  img: carrot     },
@@ -36,7 +36,7 @@
                 "
             >
                 {/* Image */}
-                <div className="bg-orange-50 flex items-center justify-center h-54 w-full">
+                <div className="bg-[#FFF8F5]     flex items-center justify-center h-54 w-full">
                 <img
                     src={product.img}
                     className="w-36 h-36 object-contain transition-transform duration-300 group-hover:scale-110"
