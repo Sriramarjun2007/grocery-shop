@@ -5,6 +5,7 @@ import Feature from "./component/Feature"
 import Ourproduct from "./component/Ourproduuct"
 import Category from "./pages/Category"
 import Cart from "./pages/Cart" 
+import Checkout from "./pages/Checkout"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         } />
         <Route path="/category" element={<Category />} />
         <Route path="/cart" element={<Cart />} /> 
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
   )
