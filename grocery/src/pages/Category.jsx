@@ -38,13 +38,18 @@ const products = [
 
 const categories = ["All", "Vegetables", "Fruits", "Dairy Products", "Fresh Meats"];
 
-function Ourproduct() {
+function Ourproduct({ search }) {
   const [selected, setSelected] = useState("All");
   const { addToCart } = useCart();
 
-  const filtered = selected === "All"
+ const categoryFiltered =
+  selected === "All"
     ? products
     : products.filter((p) => p.category === selected);
+
+const filtered = categoryFiltered.filter((product) =>
+  product.name.toLowerCase().includes(search.toLowerCase())
+);
 
   return (
     <div className="flex  mt-18">

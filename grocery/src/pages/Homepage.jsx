@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import homeimage from "../assets/home.jpg";
 
 function Home() {
@@ -24,9 +25,11 @@ function Home() {
           </p>
 
           <div className="flex gap-6 mt-4">
+            <Link to="/category">
             <button className="text-white text-base font-bold bg-green-700 rounded-2xl px-8 py-3 cursor-pointer hover:bg-green-900 transition-all duration-200">
               Shop Now
             </button>
+            </Link>
             <button className="text-white text-base font-bold bg-orange-600 rounded-2xl px-8 py-3 cursor-pointer hover:bg-orange-800 transition-all duration-200">
               About Us
             </button>

@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { Link, useLocation } from 'react-router-dom'; 
 import { useCart } from "../CartContext"
 
-function Navbar() {
+function Navbar({ search, setSearch }) {
   const location = useLocation(); 
     const { totalItems } = useCart();
   return (
@@ -34,7 +34,17 @@ function Navbar() {
         </ul>
 
         <div className="flex gap-6 text-black text-2xl items-center"> 
-          <FaSearch className="cursor-pointer hover:text-orange-300 transition-colors duration-200" /> 
+          <div className="flex items-center bg-white rounded-full px-3 py-2">
+  <FaSearch className="text-gray-500" />
+
+  <input
+    type="text"
+    placeholder="Search..."
+    className="outline-none ml-2 text-base w-40"
+    value={search}
+    onChange={(e) => setSearch(e.target.value)}
+  />
+</div>
           <div className="relative">
             <Link to="/cart">
             <FaBagShopping className="cursor-pointer hover:text-orange-300 transition-colors duration-200" /> 

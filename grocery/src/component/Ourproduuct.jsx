@@ -4,7 +4,7 @@
     import greenapple from "../assets/greenapple.png";
     import watermeloon from "../assets/watermeloon.png";
     import orange from "../assets/orange.png";
-   
+   import { useCart } from "../CartContext";
     const products = [
     { id: 1, name: "Fresh Onion",      variety: "Red variety",    price: "₹80",  oldPrice: "₹120", discount: "33% off", reviews: "(128)", img: onion      },
     { id: 2, name: "Fresh Carrot",     variety: "Orange variety", price: "₹40",  oldPrice: "₹60",  discount: "33% off", reviews: "(98)",  img: carrot     },
@@ -13,7 +13,9 @@
     { id: 5, name: "Fresh Watermelon", variety: "Red variety",    price: "₹60",  oldPrice: "₹90",  discount: "33% off", reviews: "(54)",  img: watermeloon},
     { id: 6, name: "Fresh Orange",     variety: "Navel variety",  price: "₹70",  oldPrice: "₹100", discount: "30% off", reviews: "(87)",  img: orange     },
     ];
+    
     function Ourproduct() {
+        const { addToCart } = useCart();
     return (
         <div>
         {/* Heading */}
@@ -65,7 +67,10 @@
                     <span className="text-green-600 text-xs font-semibold">{product.discount}</span>
                 </div>
 
-                <button className="
+                <button onClick={() => {
+                            addToCart(product);
+                            alert(`${product.name} is added to cart!`);
+                            }} className="
                     mt-4 w-full
                     bg-orange-500 hover:bg-orange-600 active:scale-95
                     text-white font-semibold text-sm
