@@ -8,6 +8,7 @@ import Category from "./pages/Category";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Ourcattegory from "./component/Ourcategory";
+import Blog from "./component/Blog";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -25,6 +26,7 @@ function App() {
               <Feature />
               <Ourproduct search={search} />
               <Ourcattegory />
+              <Blog/>
             </>
           }
         />
