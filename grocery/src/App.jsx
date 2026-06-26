@@ -9,6 +9,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Ourcattegory from "./component/Ourcategory";
 import Blog from "./component/Blog";
+import Footer from "./component/Footer";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -27,17 +28,20 @@ function App() {
               <Ourproduct search={search} />
               <Ourcattegory />
               <Blog/>
+              <Footer />
             </>
           }
         />
 
         <Route
           path="/category"
-          element={<Category search={search} />}
+          element={<Category search={search} />   
+        }
         />
 
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        
       </Routes>
     </div>
   );
