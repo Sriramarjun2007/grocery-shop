@@ -26,7 +26,7 @@ function App() {
               <Homepage />
               <Feature />
               <Ourproduct search={search} />
-              <Ourcattegory />
+              <Ourcategory />
               <Blog/>
               <Footer />
             </>
