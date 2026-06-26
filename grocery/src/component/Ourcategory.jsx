@@ -57,7 +57,7 @@ function Ourcategory() {
               />
             </div>
 
-            {/* Content */}
+            
             <div className="p-6 text-center">
               <p className="text-green-700 font-bold text-xl">
                 {product.name}
