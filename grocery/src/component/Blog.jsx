@@ -30,7 +30,7 @@ function Blog() {
           Our
         </h2>
 
-        <div className="relative bg-orange-400 text-white px-8 sm:px-12 md:px-14 py-4 sm:py-5 md:py-6 text-2xl sm:text-3xl md:text-4xl font-bold">
+        <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-green-700">
           Blog
 
           {/* Left Triangle */}
