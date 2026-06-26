@@ -7,19 +7,19 @@ const products = [
   {
     id: 1,
     name: "Fresh Vegetables",
-    offer: "Upto 45% offer",
+    offer: "Upto 30% offer",
     img: vegetables,
   },
   {
     id: 2,
     name: "Fresh Fruits",
-    offer: "Upto 45% offer",
+    offer: "Upto 50% offer",
     img: fruits,
   },
   {
     id: 3,
-    name: "Fresh Diary",
-    offer: "Upto 45% offer",
+    name: "Fresh Dairy",
+    offer: "Upto 35% offer",
     img: diary,
   },
 ];
