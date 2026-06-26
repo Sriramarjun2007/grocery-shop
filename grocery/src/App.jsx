@@ -10,7 +10,8 @@ import Checkout from "./pages/Checkout";
 import Ourcategory from "./component/Ourcategory";
 import Blog from "./component/Blog";
 import Footer from "./component/Footer";
-
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 function App() {
   const [search, setSearch] = useState("");
 
@@ -41,6 +42,8 @@ function App() {
 
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         
       </Routes>
     </div>
