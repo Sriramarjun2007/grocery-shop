@@ -7,7 +7,7 @@ import Ourproduct from "./component/Ourproduuct";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
-import Ourcattegory from "./component/Ourcategory";
+import Ourcategory from "./component/Ourcategory";
 import Blog from "./component/Blog";
 import Footer from "./component/Footer";
 
